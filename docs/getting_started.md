@@ -20,9 +20,16 @@ Sketch programs are placed within a `sketch` block:
 
 ![Sketch in sim block](media/sketch_in_sim_block.png)
 
+Load the `hello` project (`frontend/hello.xml` or hosted in the Snap cloud). With this you can draw using the arrow keys. It is a very simple set of _event handlers_ (which we'll learn more about later) to move about the screen.
+
+![Forward](media/up_key.png)
+![Left](media/left_key.png)
+![Right](media/right_key.png)
+![Back](media/down_key.png)
+
 You can imagine that you are driving a little _turtle_ around the screen. Represented by the little black arrow, the turtle has a position and orientation (a _pose_). You can command the turtle to `move` and `turn`. Each command is relative to the current pose. This _Turtle Graphics_ system makes it very easy to define many interesting patterns.
 
-Let's try drawing a square:
+It's kind of fun to manually drive around the screen, but it's a bit tedious. We can **automate** this! Let's try drawing a square:
 
 ![Square sketch](media/square_sketch.png)
 ![Square sim](media/square_sim.png)
@@ -40,7 +47,7 @@ A circle can be easily approximated by a polygon with many sides; here with 36 s
 ![Circle sketch](media/circle_sketch.png)
 ![Circle sim](media/circle_sim.png)
 
-Try adding many circles, each offset by 20 degrees:
+Try adding many circles, each offset by 20 degrees by nesting within another `repeat`:
 
 ![Spiro sketch](media/spiro_sketch.png)
 ![Spiro sim](media/spiro_sim.png)
@@ -53,6 +60,12 @@ Notice that the `sketch` block has a dropdown menu from which you may select `on
 
 But first...
 
-## Calibration
+## Connecting to SketchBot
+
+Maybe your teacher has already done this, in which case all you need to do is enter the IP addess of the _server_ (just like IP addresses of Minecraft servers). Press 'A' to get this dialog:
+
+![IP Address](ip.png)
+
+If you are a teacher, you may need to adjust firewall settings on your machine and ensure that students are on the same subnet as you for this to work.
 
 

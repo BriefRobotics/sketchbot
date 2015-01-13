@@ -31,7 +31,7 @@ Nice!
 
 There is a lot of repeditive code in there. In keeping with the _don't repeat yourself (DRY)_ principle, let's clean that up:
 
-![Square sketch DRY](media/square_sketch_dry.png)
+![Square sketch DRY](media/square_dry_sketch.png)
 
 Drawing a square is easy. Have you ever tried to draw a perfect circle on an Etch A Sketch? Not easy for a human, but to a robot it's no more difficult than a straight line.
 

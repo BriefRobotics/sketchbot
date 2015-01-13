@@ -29,7 +29,7 @@ Let's try drawing a square:
 
 Nice!
 
-There is a lot of repeditive code in there. In keeping with the _don't repeat yourself (DRY)_ principle, let's clean that up:
+There is a lot of repeditive code in there. In keeping with the _don't repeat yourself (DRY)_ principle, let's clean that up with a `repeat` block:
 
 ![Square sketch DRY](media/square_dry_sketch.png)
 

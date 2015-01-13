@@ -22,10 +22,21 @@ Sketch programs are placed within a `sketch` block:
 
 ![Sketch in sim block](media/sketch_in_sim_block.png)
 
-A circle can be easily approximated by a polygon with many sides:
+A circle can be easily approximated by a polygon with many sides; here with 36 sides, 10 steps and 10 degrees appart:
 
 ![Circle sketch](media/circle_sketch.png)
 ![Circle sim](media/circle_sim.png)
+
+You can imagine that you are driving a little _turtle_ around the screen. Represented by the little black arrow, the turtle has a position and orientation (a _pose_). Each command is relative to the current pose. This _Turtle Graphics_ system makes it very easy to define many interesting patterns.
+
+Try adding many circles, each offset by 20 degrees:
+
+![Spiro sketch](media/spiro_sketch.png)
+![Spiro sim](media/spiro_sim.png)
+
+Fun!
+
+Notice that the `sketch` block has a dropdown menu from which you may select `on real Etch A Sketch`. Anything you can do in simulation, you can send to SketchBot to be drawn! But first...
 
 ## Calibration
 

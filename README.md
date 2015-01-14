@@ -28,5 +28,6 @@ You will need to run backend.exe as an admin (allowed to listen on HTTP). You wi
 
 * [The Pitch](docs/pitch.md)
 * [Getting Started](docs/getting_started.md)
+* [Intermediate Turtle Graphics](docs/intermediate.md)
 * [Sketching Photos](docs/stipple.md)
 * [Quotes](docs/quotes.md)

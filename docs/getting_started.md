@@ -58,7 +58,7 @@ Fun!
 
 Notice that the `sketch` block has a dropdown menu from which you may select `on real Etch A Sketch`. Anything you can do in simulation, you can send to SketchBot to be drawn!
 
-![Fun!](media/fun.png)
+![Fun!](media/fun.jpg)
 
 But first...
 

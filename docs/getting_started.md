@@ -16,10 +16,6 @@ There is nothing to install to use Snap. Simply visit http://snap.berkeley.edu/r
 
 ## Hello World
 
-Sketch programs are placed within a `sketch` block:
-
-![Sketch in sim block](media/sketch_in_sim_block.png)
-
 Load the `hello` project (`frontend/hello.xml` or hosted in the Snap cloud). With this you can draw using the arrow keys. It is a very simple set of _event handlers_ (which we'll learn more about later) to move about the screen.
 
 ![Forward](media/up_key.png)
@@ -29,7 +25,13 @@ Load the `hello` project (`frontend/hello.xml` or hosted in the Snap cloud). Wit
 
 You can imagine that you are driving a little _turtle_ around the screen. Represented by the little black arrow, the turtle has a position and orientation (a _pose_). You can command the turtle to `move` and `turn`. Each command is relative to the current pose. This _Turtle Graphics_ system makes it very easy to define many interesting patterns.
 
-It's kind of fun to manually drive around the screen, but it's a bit tedious. We can **automate** this! Let's try drawing a square:
+It's kind of fun to manually drive around the screen, but it's a bit tedious. We can **automate** this!
+
+Proper Sketch programs are normally placed within a `sketch` block:
+
+![Sketch in sim block](media/sketch_in_sim_block.png)
+
+Let's try drawing a square:
 
 ![Square sketch](media/square_sketch.png)
 ![Square sim](media/square_sim.png)
@@ -56,7 +58,7 @@ Fun!
 
 Notice that the `sketch` block has a dropdown menu from which you may select `on real Etch A Sketch`. Anything you can do in simulation, you can send to SketchBot to be drawn!
 
-![Fun!](fun.png)
+![Fun!](media/fun.png)
 
 But first...
 
@@ -64,7 +66,7 @@ But first...
 
 Maybe your teacher has already done this, in which case all you need to do is enter the IP addess of the _server_ (just like IP addresses of Minecraft servers). Press 'A' to get this dialog:
 
-![IP Address](ip.png)
+![IP Address](media/ip.png)
 
 If you are a teacher, you may need to adjust firewall settings on your machine and ensure that students are on the same subnet as you for this to work.
 

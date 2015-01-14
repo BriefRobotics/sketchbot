@@ -25,6 +25,8 @@ Load the `hello` project (`frontend/hello.xml` or hosted in the Snap cloud). Wit
 
 You can imagine that you are driving a little _turtle_ around the screen. Represented by the little black arrow, the turtle has a position and orientation (a _pose_). You can command the turtle to `move` and `turn`. Each command is relative to the current pose. This _Turtle Graphics_ system makes it very easy to define many interesting patterns.
 
+![Manual driving](media/driving_sim.png)
+
 It's kind of fun to manually drive around the screen, but it's a bit tedious. We can **automate** this!
 
 Proper Sketch programs are normally placed within a `sketch` block:

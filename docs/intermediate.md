@@ -68,4 +68,29 @@ At any rate, we can now make `triangle` more succinct:
 
 ![Triangle succinct def](media/triangle_succinct_def.png)
 
-## 
+## More Generalization
+
+Defining `square` in terms of `rectangle` couldn't really get more concise, but if we go back and rethink things a bit, we might notice that we could have defined it very similarly to `triangle`:
+
+![Square re-redefinition](media/square_reredef.png)
+![Triangle succinct def](media/triangle_succinct_def.png)
+
+Rethinking what you've done and sealed away from time to time is a healty habit. Do you see any generalization we can make here?
+
+Both are really just polygons!
+
+![Polygon def](media/polygon_def.png)
+
+The difference is in the number of sides and the corner angles. A square is a _regular quadrilateral_.
+
+![Triangle polygon def](media/triangle_poly_def.png)
+![Square polygon def](media/square_poly_def.png)
+
+Why not go ahead and define a `pentagon`, `hexagon`, ... even a `circle` can be approximated as we did earlier as a many sided polygon.
+
+![Pentagon def](media/pentagon_def.png)
+![Hexagon def](media/hexagon_def.png)
+![Circle def](media/circle_def.png)
+
+![Shapes sketch](media/shapes_sketch.png)
+![Shapes sim](media/shapes_sim.png)

@@ -101,14 +101,14 @@ There is still something about these definitions that should bother you! Why is 
 
 ![Polygon smart def](media/polygon_smart_def.png)
 
-Notice that we define `regular polygon` in terms of the more explicit `polygon`. While it's nice to not have to specify the `corner` angles, we don't want to lose the ability to make things such as five-sided polygons that are _not_ pentagons:
+You don't want to be _too_ smart, however! Notice that we define `regular polygon` in terms of the more explicit `polygon`. While it's nice to not have to specify the `corner` angles, we don't want to lose the ability to make things such as five-sided polygons that are _not_ pentagons:
 
 ![Star def](media/star_def.png)
 ![Star sim](media/star_sim.png)
 
-This is yet another general principle. It is well and good to hide details to make things "simpler", but you don't want to lose capabilities in the process. Build layer atop layers, but without _forbidding_ access to the layers below.
+This is yet another general principle. It is well and good to hide details to make things "simpler", but you don't want to lose capabilities in the process. Build layers atop layers, but without _forbidding_ access to useful layers below.
 
-Now the various concrete polygons have less _internals_ of how things work embedded in them.
+Now the various concrete polygons can be defined in terms of general `regular polygon` and have less _internals_ of how things work embedded in them.
 
 ![Triangle smart def](media/triangle_smart_def.png)
 ![Square smart def](media/square_smart_def.png)

@@ -13,7 +13,7 @@ We've even parameterized our new word with a size. This way we can _reach in_ an
 ![Square pattern sketch](media/square_pattern_sketch.png)
 ![Square pattern sim](media/square_pattern_sim.png)
 
-### Refactoring
+## Refactoring
 
 The way it normally goes is that you start out playing around. Maybe to make a rectangle you think of this:
 
@@ -32,8 +32,40 @@ Hey, you may as well name this `rectangle` sketch and parameterize it by the `wi
 
 ![Rectangle definition](media/rect_def.png)
 
-And, oh wait, we can redefine `square` to be simply a rectangle with equal sides!
+And, oh wait, we can now redefine `square` to be simply a `rectangle` with equal sides!
 
 ![Square redefinition](media/square_redef.png)
 
-This idea of making rough sketches (so to speak) and then continually refactoring as you add abstractionr and discover more succinct ways of describing what you want is one of the great joys of programming.
+The pretty pattern we made with squares still works with this new definition of `square`. This is an important point. Any sketch using the definition shouldn't know or care how it works.
+
+This idea of making rough sketches (so to speak) and then continually refactoring as you add abstractions and discover more succinct ways of describing what you want is one of the great joys of programming.
+
+## Generality
+
+Let's play with some other shapes. We should be able to make a triangle the same way we made a square, but with fewer sides and tighter turns.
+
+![Triangle oops sketch](media/triangle_oops_sketch.png)
+![Triangle oops sim](media/triangle_oops_sim.png)
+
+Oops! I was thinking that the interior angles of an isosceles triangle is 60 degrees. Actually the turn angles in turtle geometry are the _exterior_ angles. We got lucky with the square, where both are 90 degrees. Trying again:
+
+![Triangle sketch](media/triangle_sketch.png)
+![Triangle sim](media/triangle_sim.png)
+
+And of course, we should bundle this up and give it a name.
+
+![Triangle def](media/triangle_def.png)
+
+Does anything bother you yet about the definitions we've made so far? How is `triangle` different from `rectangle` or `square`? Why can't we use our `side` definition here?
+
+At the time, we were thinking only about shapes with right-angled corners and so we assumed that `side` with 90 degrees. It's more succinct to make our base definitions as general as possible and then, perhaps, define more specific and specialized things in terms of them.
+
+![Side general def](media/side_general_def.png)
+
+We can then either go into the `rectangle` definition and hardcode 90, or we could define a new `right angle side` and define `rectangle` in terms of this. We'll leave that up to you.
+
+At any rate, we can now make `triangle` more succinct:
+
+![Triangle succinct def](media/triangle_succinct_def.png)
+
+## 

@@ -2,13 +2,13 @@
 
 ## Abstraction
 
-One of the most important things in programming within any language is the ability to _abstract_. That is, the ability to create new compound constructs that are indistinguishable from the primitives. In this way you can extend the language; defining increasingly compounded things.
+One of the most important things in programming within any language is the ability to _abstract_. The ability to create new compound constructs that are indistinguishable from primitives gives one approach. In this way you can essentially extend the language; defining increasingly intricate things.
 
 In our Turtle Graphics language here, we have primitives such as `move`, `turn`, `repeat`, ... Let's make a `square` definition from what we created earlier.
 
 ![Square definition](media/square_def.png)
 
-We've even parameterized our new word with a size. This way we can _reach in_ and poke values into the defintion without cracking it open. More importantly, without having to know how it works at all. This is how you manage complexity as you make more and more intricate things. We can now use our `square` within a familiar pattern.
+We've even parameterized our new word with a size. This way we can _reach in_ and poke values into the defintion without cracking it open. More importantly, without having to know how it works inside. This is how you manage complexity as you make more and more intricate things. We can now use our `square` within a familiar pattern.
 
 ![Square pattern sketch](media/square_pattern_sketch.png)
 ![Square pattern sim](media/square_pattern_sim.png)
@@ -36,7 +36,7 @@ And, oh wait, we can now redefine `square` to be simply a `rectangle` with equal
 
 ![Square redefinition](media/square_redef.png)
 
-The pretty pattern we made with squares still works with this new definition of `square`. This is an important point. Any sketch using the definition shouldn't know or care how it works.
+The pretty pattern we made with squares still works with this new definition of `square`. This is an important point. Any sketch using the definition shouldn't know or care how it works. You should be free to change the _internals_ without breaking things.
 
 This idea of making rough sketches (so to speak) and then continually refactoring as you add abstractions and discover more succinct ways of describing what you want is one of the great joys of programming.
 
@@ -47,7 +47,7 @@ Let's play with some other shapes. We should be able to make a triangle the same
 ![Triangle oops sketch](media/triangle_oops_sketch.png)
 ![Triangle oops sim](media/triangle_oops_sim.png)
 
-Oops! I was thinking that the interior angles of an isosceles triangle is 60 degrees. Actually the turn angles in turtle geometry are the _exterior_ angles. We got lucky with the square, where both are 90 degrees. Trying again:
+Oops! I was thinking that the interior angles of an isosceles triangle is 60 degrees. Actually the turn angles in turtle geometry are the _exterior_ angles. We just got lucky with the square, where both are 90 degrees. Trying again:
 
 ![Triangle sketch](media/triangle_sketch.png)
 ![Triangle sim](media/triangle_sim.png)
@@ -58,7 +58,7 @@ And of course, we should bundle this up and give it a name.
 
 Does anything bother you yet about the definitions we've made so far? How is `triangle` different from `rectangle` or `square`? Why can't we use our `side` definition here?
 
-At the time, we were thinking only about shapes with right-angled corners and so we assumed that `side` with 90 degrees. It's more succinct to make our base definitions as general as possible and then, perhaps, define more specific and specialized things in terms of them.
+At the time, we were thinking only about shapes with right-angled corners and so we assumed `side` had 90 degree corners. It's more succinct to make our base definitions as general as possible and then, perhaps, define more specific and specialized things in terms of them.
 
 ![Side general def](media/side_general_def.png)
 
@@ -86,7 +86,7 @@ The difference is in the number of sides and the corner angles. A square is a _r
 ![Triangle polygon def](media/triangle_poly_def.png)
 ![Square polygon def](media/square_poly_def.png)
 
-Why not go ahead and define a `pentagon`, `hexagon`, ... even a `circle` can be approximated as we did earlier as a many sided polygon.
+Why not go ahead and define a `pentagon`, `hexagon`, etc. Even a `circle` can be approximated as we did earlier as a many sided polygon.
 
 ![Pentagon def](media/pentagon_def.png)
 ![Hexagon def](media/hexagon_def.png)
@@ -100,6 +100,13 @@ Why not go ahead and define a `pentagon`, `hexagon`, ... even a `circle` can be 
 There is still something about these definitions that should bother you! Why is it that `polygon` must know the number of `sides` **and** the `corner` angle to use? Isn't the angle always 1/side of the (360) way around?
 
 ![Polygon smart def](media/polygon_smart_def.png)
+
+Notice that we define `regular polygon` in terms of the more explicit `polygon`. While it's nice to not have to specify the `corner` angles, we don't want to lose the ability to make things such as five-sided polygons that are _not_ pentagons:
+
+![Star def](media/star_def.png)
+![Star sim](media/star_sim.png)
+
+This is yet another general principle. It is well and good to hide details to make things "simpler", but you don't want to lose capabilities in the process. Build layer atop layers, but without _forbidding_ access to the layers below.
 
 Now the various concrete polygons have less _internals_ of how things work embedded in them.
 

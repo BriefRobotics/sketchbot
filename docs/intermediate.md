@@ -10,7 +10,7 @@ In our Turtle Graphics language here, we have primitives such as `move`, `turn`,
 
 We've even parameterized our new word with a size. This way we can _reach in_ and poke values into the defintion without cracking it open. More importantly, without having to know how it works at all. This is how you manage complexity as you make more and more intricate things. We can now use our `square` within a familiar pattern.
 
-![Square pattern sketch](media/square_pattern.png)
+![Square pattern sketch](media/square_pattern_sketch.png)
 ![Square pattern sim](media/square_pattern_sim.png)
 
 ### Refactoring

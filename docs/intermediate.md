@@ -94,3 +94,21 @@ Why not go ahead and define a `pentagon`, `hexagon`, ... even a `circle` can be 
 
 ![Shapes sketch](media/shapes_sketch.png)
 ![Shapes sim](media/shapes_sim.png)
+
+## "Smart" Words
+
+There is still something about these definitions that should bother you! Why is it that `polygon` must know the number of `sides` **and** the `corner` angle to use? Isn't the angle always 1/side of the (360) way around?
+
+![Polygon smart def](media/polygon_smart_def.png)
+
+Now the various concrete polygons have less _internals_ of how things work embedded in them.
+
+![Triangle smart def](media/triangle_smart_def.png)
+![Square smart def](media/square_smart_def.png)
+![Pentagon smart def](media/pentagon_smart_def.png)
+![Hexagon smart def](media/hexagon_smart_def.png)
+![Circle smart def](media/circle_smart_def.png)
+
+## Fun!
+
+You can see that this constant refactoring can be quite fun! It's almost always the case that you start out with a few concrete instances of something and then realize the general idea. Humans are excellent at generalizing from examples. Don't feel bad at all about having build things only to tear them appart and rebuild atop new generalizations. This is all part of the fun!

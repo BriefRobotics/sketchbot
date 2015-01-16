@@ -24,7 +24,7 @@ In any case, unless you want **infinite** recursion, you always have a _base cas
 
 ## How Do For Loops Work?
 
-Do you remember when we said that being able to define new words that are indistinguishable from primitives is one of the primary means of abstraction? You probably thing that the `for` loop is a primitive. Try right-clicking (or CTRL-click) and `Edit...` it.
+Do you remember when we said that being able to define new words that are indistinguishable from primitives is one of the primary means of abstraction? You probably think that the `for` loop is a primitive. Try right-clicking (or CTRL-click) and `Edit...` it.
 
 ![for loop def](media/for_loop_def.png)
 
@@ -32,13 +32,13 @@ There's a bit of a mess in there to handle reverse loops where the start is _gre
 
 ![for loop simple def](media/for_loop_simple_def.png)
 
-The `change i by 1` is the "impure" part. It's the `x = x + 1`. Here's how to do is _functionally_:
+The `change i by 1` is the "impure" part. It's the `x = x + 1`. Here's how to do it _functionally_:
 
 ![for loop functional def](media/for_loop_functional_def.png)
 
-This is a higher order word, [as we learned about earlier](hof.md), taking a the `i` and `end` values and an `action` body. The base case is when `i` reaches `end`. The `action` is passed the current iteration (`i`) explicitly and this is incremented on each recursion. That's it!
+This is a higher order word, [as we learned about earlier](hof.md), taking the `i` and `end` values and an `action` body. The base case is when `i` reaches `end`. The `action` is passed the current iteration (`i`) explicitly and this is incremented on each recursion. That's it!
 
-How exactly do you pass an `action` taking a parameter. There's a _trick_ of sorts in the language in that simply leaving a slot empty yields a function taking a parameter.
+How exactly do you pass an `action` taking a parameter? There's a _trick_ of sorts in the language in that simply leaving a slot empty yields a function taking a parameter.
 
 ![for loop functional prog](media/for_loop_functional_prog.png)
 

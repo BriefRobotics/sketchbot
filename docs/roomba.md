@@ -1,6 +1,10 @@
 # Roomba
 
-Have you ever sat and watched the Roomba vacuum your house? It's amazing that it exhibits such "intelligent" behaviour when it's really mostly a so-called drunken walk. The roboticists at iRobot run simulations to optimize the behavior so that it _tends_ to cover the whole floor quickly when really it has very little idea where it is or where it's been. Take a look at an [iRobot Floor Coverage Lab Test](http://youtu.be/7FSUtSurqA4). Very interesting, isn't it?
+This is a 30-minute exposure of a Roomba vacuum cleaning a bedroom (from [this Wired magazine article](http://www.wired.com/2009/05/long-exposure-shows-web-like-roomba-light-trail/)).
+
+![Roomba trace](media/roomba_trace.jpg)
+
+If you've ever sat and watched a Roomba work, it's amazing that it exhibits such "intelligent" behaviour when it's really mostly a so-called drunken walk. The roboticists at iRobot run simulations to optimize the behavior so that it _tends_ to cover the whole floor quickly when really it has very little idea where it is or where it's been. Take a look at an [iRobot Floor Coverage Lab Test](http://youtu.be/7FSUtSurqA4). Very interesting, isn't it?
 
 > Side note: Dyson has [made a robot vacuum that _does_ do proper localization and navigation](https://www.dyson360eye.com/). I actually like the Roomba's simple, emergent behavior better. It has a certain elegance.
 

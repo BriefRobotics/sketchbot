@@ -32,7 +32,7 @@ Changing the program only slightly gives us something more like it.
 
 The random exploration tends to cover the room (screen) pretty well, but it missed gaps along the edges. In a real home, the edges are where a lot of dirt accumulates. Watching the Roomba, you might have noticed that it hugs the walls and furnature edges and legs sometimes. Not always, but sometimes.
 
-That's easy to do. Just turn a small amount every time we bump into the edge:
+That's easy to do. Just turn a small amount every time we bump into the edge. The real Roomba has this same tiny bump-turn-bump-turn behavior as it's lining up with a wall edge:
 
 ![Roomba wall following sketch](media/wall_following_sketch.png)
 ![Roomba wall following sim](media/wall_following_sim.png)
@@ -43,7 +43,7 @@ In keeping with the "embrace randomness" theme, how about we just randomly choos
 
 ![Follow wall def](media/follow_wall_def.png)
 
-This way we can ask the turtle to carry out this behavior temporarily and then resume the _normal_ behavior of randomly exploring. Notice the use of [recursion](recursion.md) here.
+This way we can ask the turtle to carry out this behavior temporarily and then resume the _normal_ behavior of randomly exploring. Notice the use of recursion here, [which we learned earlier](recursion.md) here.
 
 ![Roomba behavior sketch](media/roomba_behavior_sketch.png)
 ![Roomba behavior sim](media/roomba_behavior_sim.png)
@@ -56,7 +56,7 @@ It seems a shame that when the robot first starts in the middle of wide open spa
 
 You might think that simply scanning back and forth (the way you mow your lawn) would be best, but that turns out to be difficult in practice. The Roomba really can't rotate or translate itself very precisely and has no encoders or other sensors to give it feedback. With furnature and such it gets quite complicated.
 
-Let's go ahead at add this as well.
+Let's go ahead at add spiraling.
 
 ![Roomba spiral def](media/roomba_spiral_def.png)
 ![Roomba spiral sketch](media/roomba_spiral_sketch.png)
@@ -66,6 +66,6 @@ Not bad! We cover the wide open center of the room very well, catch the corners 
 
 ## Conclusion
 
-This i  the kind of process that roboticists at iRobot go through when optimizing the algorithms for most efficient and complete room coverage in their [lab video](http://youtu.be/7FSUtSurqA4) we watched at the beginning.
+This is the kind of process that roboticists at iRobot go through when optimizing the algorithms for most efficient and complete room coverage in their [lab video](http://youtu.be/7FSUtSurqA4) we watched at the beginning.
 
-It's very interesting to see that emergent behavior often comes from very simple algorithms and that an effective vacuum robot can be built with very minimal sensors and with only very local understanding of it's environment. The Dyson robot may do a better job, but at a _much_ higher cost and complexity.
+It's very interesting to see that emergent behavior often comes from very simple algorithms and that an effective vacuum robot can be built with very minimal sensors and with only very local understanding of it's environment. The [Dyson robot](https://www.dyson360eye.com/) may do a better job, but at a _much_ higher cost and complexity.

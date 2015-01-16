@@ -119,3 +119,5 @@ Now the various concrete polygons can be defined in terms of general `regular po
 ## Fun!
 
 You can see that this constant refactoring can be quite fun! It's almost always the case that you start out with a few concrete instances of something and then realize the general idea. Humans are excellent at generalizing from examples. Don't feel bad at all about having build things only to tear them appart and rebuild atop new generalizations. This is all part of the fun!
+
+# [Next: Higher Order Functions](hof.md)

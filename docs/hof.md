@@ -31,7 +31,7 @@ Words that take functions as input have the familiar C-shape.
 
 ![Spin c-shape](media/spin_c_shape.png)
 
-Whatever you place within (even multy-block complicated procedures) is passed as an unevaluated function.
+Whatever you place inside (even multi-block complicated procedures) is passed as an unevaluated function.
 
 ![Circle spin hof sketch](media/circle_spin_hof_sketch.png)
 ![Pentagon spin hof sketch](media/pentagon_spin_hof_sketch.png)
@@ -42,3 +42,5 @@ If this is your first language, this probably seems like a simple and obvious co
 > "It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration." - Edsger Dijkstra
 
 Consider yourself lucky and have fun sketching!
+
+# [Next: Recursion](recursion.md)

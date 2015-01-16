@@ -43,3 +43,5 @@ How exactly do you pass an `action` taking a parameter? There's a _trick_ of sor
 ![for loop functional prog](media/for_loop_functional_prog.png)
 
 Have fun sketching!
+
+# [Next: Roomba](roomba.md)

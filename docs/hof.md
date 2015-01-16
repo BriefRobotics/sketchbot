@@ -27,13 +27,17 @@ In any good language, there should be nothing that cannot be treated "first clas
 
 > Side note: Some languages do allow first class functions but then miss other essentials like first class events (I'm looking at _you_ C#!)
 
-Words that take functions as input have the familiar C-shape. Whatever you place within (even multy-block complicated procedures) is passed as an unevaluated function.
+Words that take functions as input have the familiar C-shape.
+
+![Spin c-shape](media/spin_c_shape.png)
+
+Whatever you place within (even multy-block complicated procedures) is passed as an unevaluated function.
 
 ![Circle spin hof sketch](media/circle_spin_hof_sketch.png)
 ![Pentagon spin hof sketch](media/pentagon_spin_hof_sketch.png)
 ![Flower hof sketch](media/flower_hof_sketch.png)
 
-Hopefully this seems like a simple and obvious concept. If not then perhaps you've been "mentally mutilated" by exposure to less powerful languages! Dijkstra was likely talking mainly about `goto` but still...
+If this is your first language, this probably seems like a simple and obvious concept. If not then perhaps you've been "mentally mutilated" by exposure to less powerful languages! Dijkstra was likely talking mainly about `goto` but still...
 
 > "It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration." - Edsger Dijkstra
 

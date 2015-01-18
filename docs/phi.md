@@ -114,8 +114,8 @@ A constant growth rate (`30`) seems good and we'll use `seed`s like a sunflower 
 ![Seeds 5 sketch](media/seeds_5_sketch.png)
 ![Seeds 5 sim](media/seeds_5_sim.png)
 
-![Seeds 7 sketch](media/seeds_5_sketch.png)
-![Seeds 7 sim](media/seeds_5_sim.png)
+![Seeds 7 sketch](media/seeds_7_sketch.png)
+![Seeds 7 sim](media/seeds_7_sim.png)
 
 Maybe you've noticed that flowers often have 5 or 7 petals. Actually, the number of petals is a Fibonacci number! Did you know that. Anyway, whole numbers like 5 or 7 seem to make an arrangement of seeds that follow distinct "rays" out from the center. It turns out that numbers that are evenly divisible into 360 (like 5) will produce straight rays, while those unevenly divisible (like 7) will produce somewhat curved/spiral rays. Just about any number you try will create seeds overlapping at some interval.
 
@@ -137,3 +137,12 @@ It turns out though, that the _very_ best value to use is φ! It is the optimal 
 ![Seeds phi sketch](media/seeds_phi_sketch.png)
 ![Seeds phi sim](media/seeds_phi_sim.png)
 
+This is what you see on a sunflower and on a pine cone.
+
+Another interesting thing to notice is that, depending on the constant growth rate, you will get different numbers of apparent spiral arms. If you count them, you will find that the count is always a Fibonacci number!
+
+## Leaves and Petals
+
+Plant leaves and flower petals use the same growth pattern to optimize their placement. Just think, growing leaves right on top of each other would cause them to block each other's sun light. Growing them without using all the available open space would be a waste as well. The optimal placement is similar to seed packing and Nature has again settled on placing one every φth of a circle around.
+
+![Plant leaves](media/plant_leaves.png)

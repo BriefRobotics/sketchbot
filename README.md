@@ -31,6 +31,7 @@ You will need to run backend.exe as an admin (allowed to listen on HTTP). You wi
 * [Intermediate Turtle Graphics](docs/intermediate.md)
 * [Higher Order Functions](docs/hof.md)
 * [Recursion](docs/recursion.md)
+* [φ and Fibonacci](docs/phi.md)
 * [Roomba](docs/roomba.md)
 * [Sketching Photos](docs/stipple.md)
 * [Quotes](docs/quotes.md)

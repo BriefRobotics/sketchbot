@@ -111,29 +111,29 @@ To simulate plant growth, let's make a word that spirals with a given `growth` r
 
 A constant growth rate (`30`) seems good and we'll use `seed`s like a sunflower or a pine cone. The interesting part to play with is the `sprout` value. How often should it sprout new seeds?
 
-![Seeds 5 sketch](seeds_5_sketch.png)
-![Seeds 5 sim](seeds_5_sim.png)
+![Seeds 5 sketch](media/seeds_5_sketch.png)
+![Seeds 5 sim](media/seeds_5_sim.png)
 
-![Seeds 7 sketch](seeds_5_sketch.png)
-![Seeds 7 sim](seeds_5_sim.png)
+![Seeds 7 sketch](media/seeds_5_sketch.png)
+![Seeds 7 sim](media/seeds_5_sim.png)
 
 Maybe you've noticed that flowers often have 5 or 7 petals. Actually, the number of petals is a Fibonacci number! Did you know that. Anyway, whole numbers like 5 or 7 seem to make an arrangement of seeds that follow distinct "rays" out from the center. It turns out that numbers that are evenly divisible into 360 (like 5) will produce straight rays, while those unevenly divisible (like 7) will produce somewhat curved/spiral rays. Just about any number you try will create seeds overlapping at some interval.
 
 If you try non-whole numbers, even those near φ, you will still get rays with lots of overlap and with lots of unused space between.
 
-![Seeds 1.5 sketch](seeds_1.5_sketch.png)
-![Seeds 1.5 sim](seeds_1.5_sim.png)
+![Seeds 1.5 sketch](media/seeds_1.5_sketch.png)
+![Seeds 1.5 sim](media/seeds_1.5_sim.png)
 
-![Seeds 1.6 sketch](seeds_1.6_sketch.png)
-![Seeds 1.6 sim](seeds_1.6_sim.png)
+![Seeds 1.6 sketch](media/seeds_1.6_sketch.png)
+![Seeds 1.6 sim](media/seeds_1.6_sim.png)
 
 If you use an irrational number like π, you get a pretty nice spiral.
 
-![Seeds pi sketch](seeds_pi_sketch.png)
-![Seeds pi sim](seeds_pi_sim.png)
+![Seeds pi sketch](media/seeds_pi_sketch.png)
+![Seeds pi sim](media/seeds_pi_sim.png)
 
 It turns out though, that the _very_ best value to use is φ! It is the optimal choice; creating minimal overlap and using maximal space. This is the value that Nature has settled on for seed packing.
 
-![Seeds phi sketch](seeds_phi_sketch.png)
-![Seeds phi sim](seeds_phi_sim.png)
+![Seeds phi sketch](media/seeds_phi_sketch.png)
+![Seeds phi sim](media/seeds_phi_sim.png)
 

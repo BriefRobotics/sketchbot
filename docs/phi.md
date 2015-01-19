@@ -53,6 +53,17 @@ This makes nice use of [recursion](recursion.md). Given a pair of numbers from t
 
 You can see visually that it very quickly converges to φ. Pretty neat!
 
+# Poly-pentagram
+
+Say you want to draw a pentagon with a five-sided star inside it. What length should the lines on the star be?
+
+![Poly-pentagram def](media/polypentagram_def.png)
+
+It turns out that if the sides of the pentagon are length 1, then the star lines are length φ!
+
+![Poly-pentagram sketch](media/polypentagram_sketch.png)
+![Poly-pentagram sim](media/polypentagram_sim.png)
+
 # Golden Rectangles
 
 Let's take a break to play with an interesting fractal of squares.

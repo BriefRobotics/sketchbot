@@ -44,12 +44,12 @@ The values `a` and `b` are in the golden ratio if (a + b)/a = a/b. When this is 
 
 There are other ways to calculate it (e.g. φ = (1 + sqrt 5) / 2), but the ratios of adjacent Fibonacci numbers is a pretty fun one. Here's a sketch to do it:
 
-![Calc φ def](media/phi_calc_def.png)
+![Calc φ def](media/calc_phi_def.png)
 ![Calc φ sketch](media/calc_phi_sketch.png)
 
 This makes nice use of [recursion](recursion.md). Given a pair of numbers from the sequence, it calculates and graphs the ratio as the best values of φ so far, then moves along using the `b` as the new `a` and the sum of the two as the new `b`. We go on doing this `forever` (but it'll stop when the graph goes off the screen).
 
-![Calc φ sim](media/calc_phi_sim.png)
+![Calc φ sim](media/phi_calc_sim.png)
 
 You can see visually that it very quickly converges to φ. Pretty neat!
 
@@ -146,3 +146,5 @@ Another interesting thing to notice is that, depending on the constant growth ra
 Plant leaves and flower petals use the same growth pattern to optimize their placement. Just think, growing leaves right on top of each other would cause them to block each other's sun light. Growing them without using all the available open space would be a waste as well. The optimal placement is similar to seed packing and Nature has again settled on placing one every φth of a circle around.
 
 ![Plant leaves](media/plant_leaves.png)
+
+

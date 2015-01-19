@@ -61,3 +61,5 @@ We have done all the work to validate that this little machine coupled with this
 Robotics will be one of the most exciting and interesting occupations of the 21st century, why not give our kids a tool that can spark their passion to build great things for the future? We hope you and your kids will enjoy using RoboSketch as much as we enjoyed developing it.
 
 Thank you and happy roboteering.
+
+# [Next: Getting Started](getting_started.md)

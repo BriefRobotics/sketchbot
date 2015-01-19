@@ -143,8 +143,11 @@ Another interesting thing to notice is that, depending on the constant growth ra
 
 ## Leaves and Petals
 
-Plant leaves and flower petals use the same growth pattern to optimize their placement. Just think, growing leaves right on top of each other would cause them to block each other's sun light. Growing them without using all the available open space would be a waste as well. The optimal placement is similar to seed packing and Nature has again settled on placing one every φth of a circle around.
+Plant leaves and flower petals use the same growth pattern to optimize their placement.
 
 ![Plant leaves](media/plant_leaves.png)
 
+Just think, growing leaves right on top of each other would cause them to block each other's sun light. Growing them without using all the available open space would be a waste as well. The optimal placement is similar to seed packing and Nature has again settled on placing one every φth of a circle around.
 
+![Plant leaves sketch](media/plant_leaves_sketch.png)
+![Plant leaves sim](media/plant_leaves_sim.png)

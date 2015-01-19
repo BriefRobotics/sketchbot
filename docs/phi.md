@@ -36,13 +36,13 @@ This sequence has all kinds of interesting properties, but one is this: if you m
     144/89 = 1.617977528...
     ...    = 1.618033989...
 
-Going along, we see that it approaches 1.618033989... This is a very special number! It's called  "[Golden ratio](http://en.wikipedia.org/wiki/Golden_ratio)". It's also been called "the most irrational number". It has many fractal-like self similarities. For example 1 + 1/φ = φ or φ + 1 = φ^2.
+Going along, we see that it approaches 1.618033989... This is a very special number!
 
 # φ
 
-The values `a` and `b` are in the golden ratio if (a + b)/a = a/b. When this is true, a/b = φ.
+It's called the "[Golden ratio](http://en.wikipedia.org/wiki/Golden_ratio)". It's also been called "the most irrational number". It has many fractal-like self similarities. For example 1 + 1/φ = φ or φ + 1 = φ^2. The values `a` and `b` are in the golden ratio if (a + b)/a = a/b. When this is true, a/b = φ.
 
-There are other ways to calculate it (e.g. φ = (1 + sqrt 5) / 2), but the ratios of adjacent Fibonacci numbers is a pretty fun one. Here's a sketch to do it:
+There are other ways to calculate it (e.g. φ = (1 + √5) / 2), but the ratios of adjacent Fibonacci numbers is a pretty fun one. Here's a sketch to do it:
 
 ![Calc φ def](media/calc_phi_def.png)
 ![Calc φ sketch](media/calc_phi_sketch.png)
@@ -73,14 +73,14 @@ Humm... this time the spiral _grows_.
 
 What value can we use that will be in perfect balance; filling all the space without overlapping? If you think about it, what we want is a rectangle from which we can subtract a square and get a rectangle _in the same proportions_.
 
-Hey, didn't we say earlier that 1 + 1/φ = φ? That's what we want! If a rectangle is 1 by φ and we subtract and 1 by 1 square from it, that leave a 1 by (φ - 1) rectangle and 1 / (φ - 1) = φ! Okay, _that's_ cool!
+Hey, didn't we say earlier that 1 + 1/φ = φ? That's what we want! If a rectangle is 1 by φ and we subtract and 1 by 1 square from it, that leaves a 1 by (φ - 1) rectangle and 1 / (φ - 1) = φ! Okay, _that's_ cool!
 
 Let's plug in the φ variable we calculated earlier using Fibonacci ratios:
 
 ![Square fractal phi sketch](media/square_fractal_phi_sketch.png)
 ![Square fractal phi sim](media/square_fractal_phi_sim.png)
 
-Fits _perfectly_!
+Fits absolutely _perfectly_!
 
 ## Nautilus
 
@@ -94,6 +94,8 @@ We get the same spiral as is found in a Nautilus shell. How does Nature know abo
 ![Nautilus sim](media/nautilus_sim.png)
 ![Nautilus shell](media/nautilus_shell.jpg)
 
+Of course, a shell _grows_ out from the center (the opposite of what we've done). φ is a common growth rate used throughout Nature.
+
 ## Growth Patterns
 
 As you saw if you watched the [Vi Hart video](https://www.khanacademy.org/math/recreational-math/vi-hart/spirals-fibonacci/v/doodling-in-math-class-spirals-fibonacci-and-being-a-plant-2-of-3) earlier, if we look at other growth patterns in Nature we find φ and Fibonacci all over the place.
@@ -103,13 +105,11 @@ Let's experiment with optimal packing of seeds (here in a sunflower and a pine c
 ![Sunflower seeds](media/sunflower.jpg)
 ![Pine cone](media/pine_cone.jpg)
 
-To simulate plant growth, let's make a word that spirals with a given `growth` rate, placing up to `1000` seeds or leaves or whatever `make part λ` you like. The distribution of parts will be every `sprout`th 
-
 To simulate plant growth, let's make a word that spirals with a given `growth` rate, placing up to `1000` seeds or leaves or whatever `make part λ` you like. The distribution of parts will be every `1/sprout` of the way around (`360` degrees).
 
 ![Plant growth def](media/plant_growth_def.png)
 
-A constant growth rate (`30`) seems good and we'll use `seed`s like a sunflower or a pine cone. The interesting part to play with is the `sprout` value. How often should it sprout new seeds?
+A constant growth rate (`30`) seems good and we'll use a `seed` like a sunflower or a pine cone. The interesting part to play with is the `sprout` value. How often should it sprout new seeds?
 
 ![Seeds 5 sketch](media/seeds_5_sketch.png)
 ![Seeds 5 sim](media/seeds_5_sim.png)
@@ -117,7 +117,7 @@ A constant growth rate (`30`) seems good and we'll use `seed`s like a sunflower 
 ![Seeds 7 sketch](media/seeds_7_sketch.png)
 ![Seeds 7 sim](media/seeds_7_sim.png)
 
-Maybe you've noticed that flowers often have 5 or 7 petals. Actually, the number of petals is a Fibonacci number! Did you know that. Anyway, whole numbers like 5 or 7 seem to make an arrangement of seeds that follow distinct "rays" out from the center. It turns out that numbers that are evenly divisible into 360 (like 5) will produce straight rays, while those unevenly divisible (like 7) will produce somewhat curved/spiral rays. Just about any number you try will create seeds overlapping at some interval.
+Maybe you've noticed that flowers often have 5 or 7 petals, and so try that first. Actually, the number of petals is a Fibonacci number! Did you know that. Anyway, whole numbers like 5 or 7 seem to make an arrangement of seeds that follow distinct "rays" out from the center. It turns out that numbers that are evenly divisible into 360 (like 5) will produce straight rays, while those unevenly divisible (like 7) will produce somewhat curved/spiral rays. Just about any number you try will create seeds overlapping at some interval.
 
 If you try non-whole numbers, even those near φ, you will still get rays with lots of overlap and with lots of unused space between.
 
@@ -132,14 +132,13 @@ If you use an irrational number like π, you get a pretty nice spiral.
 ![Seeds pi sketch](media/seeds_pi_sketch.png)
 ![Seeds pi sim](media/seeds_pi_sim.png)
 
-It turns out though, that the _very_ best value to use is φ! It is the optimal choice; creating minimal overlap and using maximal space. This is the value that Nature has settled on for seed packing.
+It turns out though, that the _very_ best value to use is φ! It is the optimal choice; creating minimal overlap and using maximal space. This is the value that Nature has settled on for seed packing and this is what you see on a sunflower and on a pine cone.
 
 ![Seeds phi sketch](media/seeds_phi_sketch.png)
 ![Seeds phi sim](media/seeds_phi_sim.png)
 
-This is what you see on a sunflower and on a pine cone.
 
-Another interesting thing to notice is that, depending on the constant growth rate, you will get different numbers of apparent spiral arms. If you count them, you will find that the count is always a Fibonacci number!
+Another interesting thing to notice is that, depending on the constant growth rate, you will get different numbers of apparent spiral arms. If you count them, you will find that the count is always a Fibonacci number (e.g. 13 above)!
 
 ## Leaves and Petals
 

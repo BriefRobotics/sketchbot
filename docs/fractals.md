@@ -93,6 +93,7 @@ The Sierpinski Triangle is something like the _opposite_ to the Hilbert Curve. R
 ![Sierpinski 4](media/sierpinski4_sim.png)
 ![Sierpinski 5](media/sierpinski5_sim.png)
 ![Sierpinski 6](media/sierpinski6_sim.png)
+![Sierpinski 7](media/sierpinski7_sim.png)
 
 If we could draw with infinitesimally thin lines, then we could watch it reduce to nothing.
 

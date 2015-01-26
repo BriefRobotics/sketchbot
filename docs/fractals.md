@@ -106,3 +106,33 @@ The program is similarly defined with a pair of mutually recursive `sierpinski` 
 A filled triangle is just a bunch of triangles within triangles, by the way:
 
 ![Filled triangle](media/filled_triangle_def.png)
+
+## [Dragon Curve](http://en.wikipedia.org/wiki/Dragon_curve)
+
+As a finale, here is a very beautiful one. Both the code and the result are quite interesting.
+
+![Dragon 0](media/dragon0_sim.png)
+![Dragon 1](media/dragon1_sim.png)
+![Dragon 2](media/dragon2_sim.png)
+![Dragon 3](media/dragon3_sim.png)
+![Dragon 4](media/dragon4_sim.png)
+![Dragon 5](media/dragon5_sim.png)
+![Dragon 6](media/dragon6_sim.png)
+![Dragon 7](media/dragon7_sim.png)
+![Dragon 8](media/dragon8_sim.png)
+![Dragon 9](media/dragon9_sim.png)
+![Dragon 10](media/dragon10_sim.png)
+![Dragon 11](media/dragon11_sim.png)
+![Dragon 12](media/dragon12_sim.png)
+![Dragon 13](media/dragon13_sim.png)
+![Dragon 14](media/dragon14_sim.png)
+![Dragon 15](media/dragon15_sim.png)
+![Dragon 16](media/dragon16_sim.png)
+
+Using [higher order functions](hof.md) makes the implementation very concise. It's actually astounding the intricate beauty that can be defined with so little code.
+
+![Dragon interation def](media/dragon_iteration_def.png)
+![Dragon def](media/dragon_def.png)
+![Dragon sketch](media/dragon_sketch.png)
+
+Have fun!

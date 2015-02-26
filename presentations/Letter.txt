@@ -1,0 +1,46 @@
+Sarah,
+
+Thank you very much for taking the time to talk with us last week. Your mission is a very fulfilling one and it was very interesting to hear your plans. We were glad to hear that perhaps robotics could play a larger role in future curricula. We look forward to working with you, contributing our expertise to integrate robotics into the Code.org offerings in whatever capacity we can. For our own work in the mean time, we will continue to use Berkeley's Snap! environment, but would much rather tie in with Code.org when that becomes possible.
+
+We truly believe that robotics is a vital piece of the puzzle. It is a great tool for introducing traditional STEM material in an uncontrived, engaging and memorable way. Robotics is a discipline that lies at the intersection of math, electrical and mechanical engineering, computer science, materials, physics and even fields like visual arts and psychology. Robotics is an occupation that favors a practitioner able to fuse different disciplines and ways of solving problems. Simply put, Robotics is applied STEM.
+
+The very part of robotics with which the girls in your summer program were frustrated is what we find most interesting. You have to deal with interactions with the real world, through noisy channels and need to understand and model the behavior you're seeing. It is indeed more difficult, but in a sense more real. Taming the difficulties very naturally introduces all aspects of STEM. Nature effects robots (e.g. gravity on arm joints) and understanding it implied understanding Nature. The robot itself is a man made thing involving technology and engineering that is often complex enough that understanding its behavior amounts to scientific observation, reason and experiment. Finally, modeling noise in the system, sensors and actuators, requires statistics; Gaussians, Bayes' rule, and other tools are naturally introduced. Learning systematic error requires the scientific method and predictive mathematical models. It could easily be the first time high school kids have applied math to something real and realize it's a wonderful "language" for doing what they need.
+
+There are several high quality hardware sets and accompanying curricula for teaching math and science using robots. In these programs, the educational emphasis is put on STEM, and the challenges specific to the field of robotics are engineered out as much as possible. We call this "STEM disguised as robotics." Another drawback of those programs is that they intentionally remove the "science fusion" lessons unique to robotics because devices that students deal with are, for the most part, finished products. As a result, students do not get a chance to develop intuition for important concepts such as simulation, real-time control, any many more.
+
+Unfortunately also, existing products are prohibitively expensive for most schools, require high level of engagement from the teacher and there is usually only one such kit per classroom; limiting the level of individual involvement. Furthermore, most of the available hardware kits are fairly complicated machines requiring some degree of maintenance. For example, battery-powered robots need to be recharged and thus have a downtime - undesirable in the format of the classroom. Mobile robots usually require some special space, which limits how many devices could be running per class (even disregarding price) and this creates additional logistical burden.
+
+To overcome those limitations, we designed the 2 degree of freedom robot we showed you. Connecting to a USB port of a traditional PC or a laptop, it is able to drive two knobs on a popular Etch-A-Sketch drawing board. We call it "SketchBot". Coupled with a step-by-step tutorial for educators and students, it can introduce kids ages 8+ to important concepts in robotics such as calibration, simulation, motion control, concurrency, as well as traditional CS material such as programming with commands in a visual environment (e.g. Snap!) or text (e.g. Python). The end product of the robot operation is a drawing produced on a physical media. As such, it is meaningful and engaging for kids of all ages. Operation of an Etch-A-Sketch toy is easily grasped even by youngest kids. Since SketchBot is merely mechanizing that operation - there is not a lot of 'magic' that happens inside the black box of a more advanced robot controller. A small vocabulary of commands to turn the knobs is all that's needed to start doing turtle graphics using the SketchBot.
+
+The visual programming environment and the step-by-step tutorial structure developed by Code.org could be an ideal front-end to in which to plug SketchBot, as well as other robotics hardware that companies are developing for the education sector. Wonder Workshop's Dot and Dash certainly come to mind, as do the Scribbler you've used and others. A quite minimal API surface provided by Code.org could open up a host of opportunities involving 3rd parties. For example, SketchBot is currently integrated with Snap! via simple blocks allowing HTTP requests and primitives to formulate a URL and to parse a response. This is enough to enable full integration with 3rd party hardware. Companies and organizations interested in promoting their educational hardware and material could develop curricula in cooperation with Code.org. This could lead to great things.
+
+Thank you again for your time, and we hope you will consider including us in future robotics-related endeavors at Code.org or in API design to allow such endeavors to be integrated by 3rd parties.
+
+References:
+
+An outlook of economic impact of automation 
+http://www.economist.com/news/leaders/21594298-effect-todays-technology-tomorrows-jobs-will-be-immenseand-no-country-ready?spc=scode&spv=xm&ah=9d7f7ab945510a56fa6d37c30b6f1709
+
+Oxford research on jobs impacted in the near future by computerization and robotics. 
+http://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf
+
+Description of the nature of robotics-related jobs by education-portal.com
+http://education-portal.com/robotics_training.html
+
+RobotsLAB hardware kit and curriculum for teaching STEM ($4,000 per kit)
+http://shop.robotslab.com/products/robotslab-box
+
+An early age introduction to creating programs using physical blocks ($240-$400)
+http://kinderlabrobotics.com/
+
+An early age introduction to creating programs using physical blocks ($150 for 6 cubes)
+http://www.modrobotics.com/cubelets/
+
+CMU Robotics Tutorial based on Lego EV3 (Free electronic accompanying a $350 Lego kit)
+http://www.education.rec.ri.cmu.edu/roboticscurriculum/
+
+Scribbler S2 - a mobile robot aimed at older kids (14+), allows exploring motion and sensing
+http://www.parallax.com/product/28136
+
+Etch A Sketch history and design
+http://en.wikipedia.org/wiki/Etch_A_Sketch

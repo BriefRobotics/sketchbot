@@ -162,4 +162,4 @@ Just think, growing leaves right on top of each other would cause them to block 
 ![Plant leaves sketch](media/plant_leaves_sketch.png)
 ![Plant leaves sim](media/plant_leaves_sim.png)
 
-# [Next: Fractals](docs/fractals.md)
+# [Next: Fractals](fractals.md)

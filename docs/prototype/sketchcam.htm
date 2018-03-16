@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>SketchCam</title>
+    <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>SketchCam</h1>
+    <video id="video" width="640" height="480"></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <script>
+const WIDTH = 640,
+      HEIGHT = 480;
+
+function onTick(context, video) {
+    context.drawImage(video, 0, 0, WIDTH, HEIGHT);
+    let frame = context.getImageData(0, 0, WIDTH, HEIGHT);
+    for (let x = 0; x < WIDTH; x++) {
+        for (let y = 0; y < HEIGHT; y++) {
+            let i = (x + y * WIDTH) * 4;
+            // frame.data[i + 0] = cR;
+            // frame.data[i + 1] = cG;
+            // frame.data[i + 2] = cB;
+        }
+    }
+    // context.putImageData(frame, 0, 0);
+    setTimeout(function () { onTick(context, video); }, 50);
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+    // Grab elements, create settings, etc.
+    var canvas = document.getElementById("canvas"),
+        context = canvas.getContext("2d"),
+        video = document.getElementById("video"),
+        videoObj = { "video": true },
+        errBack = function(error) {
+            Alert("Video capture error: ", error.code); 
+        };
+
+    // Put video listeners into place
+    if(navigator.getUserMedia) { // Standard
+        navigator.getUserMedia(videoObj, function(stream) {
+            video.src = window.URL ? window.URL.createObjectURL(stream) : stream;
+            video.play();
+            setTimeout(function () { onTick(context, video); }, 0);
+        }, errBack);
+    } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+        navigator.webkitGetUserMedia(videoObj, function(stream) {
+            video.src = window.webkitURL ? window.webkitURL.createObjectURL(stream) : stream;
+            video.play();
+            setTimeout(function () { onTick(context, video); }, 0);
+        }, errBack);
+    }
+    else if(navigator.mozGetUserMedia) { // Firefox-prefixed
+        navigator.mozGetUserMedia(videoObj, function(stream) {
+            video.src = window.URL ? window.URL.createObjectURL(stream) : stream;
+            video.play();
+            setTimeout(function () { onTick(context, video); }, 0);
+        }, errBack);
+    }
+});
+  </script>
+</body>

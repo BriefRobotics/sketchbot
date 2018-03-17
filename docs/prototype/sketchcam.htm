@@ -39,11 +39,15 @@ function onTick(context, video) {
 			p = Math.round(pix / BUCKET) * BUCKET;
 
 			// grayscale
-			context.fillStyle = 'rgb(' + p + ',' + p + ',' + p + ')';
-			context.fillRect(x * PIXEL, y * PIXEL, PIXEL, PIXEL);
+			// context.fillStyle = 'rgb(' + p + ',' + p + ',' + p + ')';
+			// context.fillRect(x * PIXEL, y * PIXEL, PIXEL, PIXEL);
 
-			// context.fillStyle = 'rgb(255,255,255)';
-			// context.
+			// solid rects
+			context.fillStyle = 'rgb(255,255,255)';
+			context.fillRect(x * PIXEL, y * PIXEL, PIXEL, PIXEL);
+			context.fillStyle = 'rgb(0,0,0)';
+			var height = (255 - p) / BUCKET * 2 + 1;
+			context.fillRect(x * PIXEL, y * PIXEL + (PIXEL / 2) - height, PIXEL, height);
         }
     }
     // context.putImageData(frame, 0, 0);

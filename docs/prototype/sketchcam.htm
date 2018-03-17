@@ -20,12 +20,30 @@ const WIDTH = 640,
 function onTick(context, video) {
     context.drawImage(video, 0, 0, WIDTH, HEIGHT);
     let frame = context.getImageData(0, 0, WIDTH, HEIGHT);
-    for (let x = 0; x < WIDTH; x++) {
-        for (let y = 0; y < HEIGHT; y++) {
-            let i = (x + y * WIDTH) * 4;
-            // frame.data[i + 0] = cR;
-            // frame.data[i + 1] = cG;
-            // frame.data[i + 2] = cB;
+	const PIXEL = 16;
+    for (var x = 0; x < WIDTH / PIXEL; x++) {
+        for (var y = 0; y < HEIGHT / PIXEL; y++) {
+			var pix = 0;
+			for (var xx = x * PIXEL; xx < x * PIXEL + PIXEL; xx++) {
+				for (var yy = y * PIXEL; yy < y * PIXEL + PIXEL; yy++) {
+					var i = (xx + yy * WIDTH) * 4;
+					var r = frame.data[i + 0];
+					var g = frame.data[i + 1];
+					var b = frame.data[i + 2];
+					var gray = 0.3 * r + 0.59 * g + 0.11 * b;
+					pix += gray;
+				}
+			}
+			const BUCKET = 256 / (PIXEL / 2);
+			pix /= (PIXEL * PIXEL);
+			p = Math.round(pix / BUCKET) * BUCKET;
+
+			// grayscale
+			context.fillStyle = 'rgb(' + p + ',' + p + ',' + p + ')';
+			context.fillRect(x * PIXEL, y * PIXEL, PIXEL, PIXEL);
+
+			// context.fillStyle = 'rgb(255,255,255)';
+			// context.
         }
     }
     // context.putImageData(frame, 0, 0);
